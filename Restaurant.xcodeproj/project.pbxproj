@@ -16,6 +16,8 @@
 		3D4562172216326600A0CFCE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4562162216326600A0CFCE /* MenuTableViewController.swift */; };
 		3D456219221632A900A0CFCE /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D456218221632A900A0CFCE /* OrderTableViewController.swift */; };
 		3D45621B2216359000A0CFCE /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45621A2216359000A0CFCE /* MenuItemDetailViewController.swift */; };
+		3D45621D2216CD6F00A0CFCE /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45621C2216CD6F00A0CFCE /* MenuItem.swift */; };
+		3D45621F2216D07B00A0CFCE /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45621E2216D07B00A0CFCE /* IntermediaryModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		3D4562162216326600A0CFCE /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		3D456218221632A900A0CFCE /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		3D45621A2216359000A0CFCE /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
+		3D45621C2216CD6F00A0CFCE /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		3D45621E2216D07B00A0CFCE /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				3D4562162216326600A0CFCE /* MenuTableViewController.swift */,
 				3D456218221632A900A0CFCE /* OrderTableViewController.swift */,
 				3D45621A2216359000A0CFCE /* MenuItemDetailViewController.swift */,
+				3D45621C2216CD6F00A0CFCE /* MenuItem.swift */,
+				3D45621E2216D07B00A0CFCE /* IntermediaryModels.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -147,9 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D45621D2216CD6F00A0CFCE /* MenuItem.swift in Sources */,
 				3D4562172216326600A0CFCE /* MenuTableViewController.swift in Sources */,
 				3D45621B2216359000A0CFCE /* MenuItemDetailViewController.swift in Sources */,
 				3D456219221632A900A0CFCE /* OrderTableViewController.swift in Sources */,
+				3D45621F2216D07B00A0CFCE /* IntermediaryModels.swift in Sources */,
 				3D45620522162CAD00A0CFCE /* ViewController.swift in Sources */,
 				3D45620322162CAD00A0CFCE /* AppDelegate.swift in Sources */,
 				3D456215221631BB00A0CFCE /* CategoryTableViewController.swift in Sources */,
