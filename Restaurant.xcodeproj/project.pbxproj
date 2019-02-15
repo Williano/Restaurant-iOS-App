@@ -18,6 +18,7 @@
 		3D45621B2216359000A0CFCE /* MenuItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45621A2216359000A0CFCE /* MenuItemDetailViewController.swift */; };
 		3D45621D2216CD6F00A0CFCE /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45621C2216CD6F00A0CFCE /* MenuItem.swift */; };
 		3D45621F2216D07B00A0CFCE /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45621E2216D07B00A0CFCE /* IntermediaryModels.swift */; };
+		3D4562232216D44100A0CFCE /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4562222216D44100A0CFCE /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3D45621A2216359000A0CFCE /* MenuItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewController.swift; sourceTree = "<group>"; };
 		3D45621C2216CD6F00A0CFCE /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		3D45621E2216D07B00A0CFCE /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
+		3D4562222216D44100A0CFCE /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				3D45621A2216359000A0CFCE /* MenuItemDetailViewController.swift */,
 				3D45621C2216CD6F00A0CFCE /* MenuItem.swift */,
 				3D45621E2216D07B00A0CFCE /* IntermediaryModels.swift */,
+				3D4562222216D44100A0CFCE /* MenuController.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D45621D2216CD6F00A0CFCE /* MenuItem.swift in Sources */,
+				3D4562232216D44100A0CFCE /* MenuController.swift in Sources */,
 				3D4562172216326600A0CFCE /* MenuTableViewController.swift in Sources */,
 				3D45621B2216359000A0CFCE /* MenuItemDetailViewController.swift in Sources */,
 				3D456219221632A900A0CFCE /* OrderTableViewController.swift in Sources */,
