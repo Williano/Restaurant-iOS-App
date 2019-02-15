@@ -89,8 +89,3 @@ class CategoryTableViewController: UITableViewController {
 
 }
 
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/Williano/Restaurant-iOS-App.git
-git push -u origin master
