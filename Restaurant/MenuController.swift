@@ -10,6 +10,8 @@ import Foundation
 
 
 class MenuController {
+    static let shared = MenuController()
+    
     let baseURL = URL(string: "http://localhost:8090/")!
     
     
@@ -21,13 +23,10 @@ class MenuController {
         
         // Create task
         let task = URLSession.shared.dataTask(with: categoryURL) { (data, response, error) in
+            let jsonDecoder = JSONDecoder()
             if let data = data,
-                let jsonDictionary = try?
-                    JSONSerialization.jsonObject(with: data) as?
-                        [String: Any],
-                let categories = jsonDictionary?["categories"] as?
-                    [String] {
-                completion(categories)
+                let categories = try? jsonDecoder.decode(Categories.self, from: data) {
+                completion(categories.categories)
             } else {
                 completion(nil)
             }
@@ -44,7 +43,7 @@ class MenuController {
         
         // Add query parameter to URL
         var components = URLComponents(url: initialURL, resolvingAgainstBaseURL: true)!
-        components.queryItems = [URLQueryItem(name: "category", value: "categoryName")]
+        components.queryItems = [URLQueryItem(name: "category", value: categoryName)]
         let menuURL = components.url!
         
         // Create Task.
@@ -63,7 +62,7 @@ class MenuController {
     }
     
     
-    // MARK: - POSt Requests
+    // MARK: - POST Requests
     func submitOrder(menuIds: [Int], completion: @escaping (Int?) -> Void){
         let orderURL = baseURL.appendingPathComponent("order")
         
