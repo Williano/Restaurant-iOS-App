@@ -20,10 +20,12 @@ class MenuController {
     // Get all categroies from the server.
     func fetchCategories(completion: @escaping ([String]?) -> Void) {
         let categoryURL = baseURL.appendingPathComponent("categories")
+        print(categoryURL)
         
         // Create task
         let task = URLSession.shared.dataTask(with: categoryURL) { (data, response, error) in
             let jsonDecoder = JSONDecoder()
+          
             if let data = data,
                 let categories = try? jsonDecoder.decode(Categories.self, from: data) {
                 completion(categories.categories)
@@ -92,4 +94,16 @@ class MenuController {
         task.resume()
         
     }
+    
+    
+    func fetchImage(url: URL, completion: @escaping (UIImage?) -> Void) {
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let data = data, let image = UIImage(data: data) {
+                completion(image)
+            } else {
+                completion(nil)
+            }
+        }
+        task.resume()
+        }
 }

@@ -8,6 +8,12 @@
 
 import UIKit
 
+
+protocol AddToOrderDelegate {
+    func added(menuItem: MenuItem)
+}
+
+
 class MenuItemDetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -18,12 +24,15 @@ class MenuItemDetailViewController: UIViewController {
     
     var menuItem: MenuItem!
     
+    var delegate: AddToOrderDelegate?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         updateUI()
+        setupDelegate()
     }
     
     // MARK: - Custom Methods
@@ -32,6 +41,25 @@ class MenuItemDetailViewController: UIViewController {
         priceLabel.text = String(format: "$%.2f", menuItem.price)
         descriptionLabel.text = menuItem.description
         addToOrderButton.layer.cornerRadius = 5.0
+        MenuController.shared.fetchImage(url: menuItem.imageURL)
+        { (image) in
+            guard let image = image else { return }
+            DispatchQueue.main.async {
+                self.imageView.image = image
+            }
+        }
+       
+    }
+    
+    func setupDelegate(){
+        if let navController = tabBarController?.viewControllers?.last as? UINavigationController,
+            let orderTableViewController = navController.viewControllers.first as? OrderTableViewController {
+            delegate = orderTableViewController
+        }
+
+//        guard let navController = tabBarController?.viewControllers?.last as? UINavigationController else { return }
+//        guard let orderTableViewController = navController.viewControllers.first as? OrderTableViewController else {return}
+//        delegate = orderTableViewController
     }
     
     
@@ -40,6 +68,7 @@ class MenuItemDetailViewController: UIViewController {
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 3.0, y: 3.0)
             self.addToOrderButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
+        delegate?.added(menuItem: menuItem)
     }
     
     /*

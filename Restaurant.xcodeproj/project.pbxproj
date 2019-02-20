@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3D9766221C8157007954CB /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D9765221C8157007954CB /* OrderConfirmationViewController.swift */; };
 		3D45620322162CAD00A0CFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45620222162CAD00A0CFCE /* AppDelegate.swift */; };
 		3D45620522162CAD00A0CFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45620422162CAD00A0CFCE /* ViewController.swift */; };
 		3D45620822162CAD00A0CFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D45620622162CAD00A0CFCE /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D3D9765221C8157007954CB /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		3D4561FF22162CAD00A0CFCE /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D45620222162CAD00A0CFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D45620422162CAD00A0CFCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				3D45621C2216CD6F00A0CFCE /* MenuItem.swift */,
 				3D45621E2216D07B00A0CFCE /* IntermediaryModels.swift */,
 				3D4562222216D44100A0CFCE /* MenuController.swift */,
+				3D3D9765221C8157007954CB /* OrderConfirmationViewController.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3D9766221C8157007954CB /* OrderConfirmationViewController.swift in Sources */,
 				3D45621D2216CD6F00A0CFCE /* MenuItem.swift in Sources */,
 				3D4562232216D44100A0CFCE /* MenuController.swift in Sources */,
 				3D4562172216326600A0CFCE /* MenuTableViewController.swift in Sources */,
